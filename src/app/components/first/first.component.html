@@ -1,0 +1,14 @@
+<p [hidden]="doNotshowP">
+  aymen
+</p>
+<button
+  (click)="showHide()"
+  class="btn btn-dark">
+  {{ btnMessage }}
+</button>
+<app-second></app-second>
+<input
+  #monInput
+  (mouseenter)="afficher(monInput.value)"
+  type="text" class="form-control">
+{{ name }}
