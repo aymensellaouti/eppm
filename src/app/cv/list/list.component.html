@@ -2,16 +2,16 @@
   <li class="list-group-item">
 <!--   appItem(cv) -->
 <!--   appItem(cvs[0]) -->
-    <app-item [cv]="cvs[0]"></app-item>
+    <app-item (selectCv)="forwardCv($event)" [cv]="cvs[0]"></app-item>
   </li>
   <li class="list-group-item">
 <!--   appItem(cv) -->
 <!--   appItem(cvs[0]) -->
-    <app-item [cv]="cvs[1]"></app-item>
+    <app-item [cv]="cvs[1]" (selectCv)="forwardCv($event)"></app-item>
   </li>
   <li class="list-group-item">
 <!--   appItem(cv) -->
 <!--   appItem(cvs[0]) -->
-    <app-item [cv]="cvs[2]"></app-item>
+    <app-item [cv]="cvs[2]" (selectCv)="forwardCv($event)"></app-item>
   </li>
 </ol>
