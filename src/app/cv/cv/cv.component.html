@@ -1,5 +1,8 @@
 <div class="row">
   <div class="col">
+    <div class="alert alert-info">
+      {{date | date: 'long' | uppercase}} i have {{ 1 | usdToBtc }} and {{ 1 | usdToBtc: true | currency}}
+    </div>
     <app-list (forwardSelectedCv)="selectCv($event)"></app-list>
   </div>
   <div class="col">

@@ -8,8 +8,8 @@ import {Cv} from "../model/cv";
 })
 export class ListComponent implements OnInit {
   cvs: Cv[] = [
-    new Cv(1,'sellaouti', 'aymen', 'teacher', 'rotating_card_profile2.png', '1234', 39),
-    new Cv(2,'drira', 'ahmed', 'Dev', 'rotating_card_profile3.png', '12345', 20),
+    new Cv(1,'sellaouti', 'aymen', 'teacher', '      ', '1234', 39),
+    new Cv(2,'drira', 'ahmed', 'Dev', '', '12345', 20),
     new Cv(3,'Ben Hlima', 'amal', 'Dev', 'rotating_card_profile.png', '1234', 19),
     new Cv(4,'Ben Hlima', 'amal', 'Dev', 'rotating_card_profile.png', '1234', 19),
   ];

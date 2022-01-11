@@ -7,6 +7,7 @@ import {Cv} from "../model/cv";
   styleUrls: ['./cv.component.css']
 })
 export class CvComponent implements OnInit {
+  date = new Date();
   selectedCv: Cv | null = null;
   constructor() { }
 
