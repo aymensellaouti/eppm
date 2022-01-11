@@ -22,6 +22,11 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { UsdToBtcPipe } from './pipes/usd-to-btc.pipe';
 import { DefaultImagePipe } from './pipes/default-image.pipe';
+import { TodoComponent } from './todo/todo/todo.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {ToastrModule} from "ngx-toastr";
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
 
 @NgModule({
   declarations: [
@@ -43,12 +48,19 @@ import { DefaultImagePipe } from './pipes/default-image.pipe';
     HighlightDirective,
     RainbowDirective,
     UsdToBtcPipe,
-    DefaultImagePipe
+    DefaultImagePipe,
+    TodoComponent,
+    NavbarComponent,
+    DetailsCvComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot({
+      // positionClass: 'toast-bottom-left',
+    }), // ToastrModule added
   ],
   providers: [],
   bootstrap: [AppComponent]
