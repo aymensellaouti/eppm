@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import {Cv} from "../model/cv";
+import {Subject} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CvService {
   private cvs: Cv[] = [];
+  selectItemSubject = new Subject<Cv>();
   constructor() {
     this.cvs = [
       new Cv(1,'sellaouti', 'aymen', 'teacher', '      ', '1234', 39),
@@ -29,5 +31,9 @@ export class CvService {
   }
   getCvById(id: number): Cv | null {
     return (this.cvs.find((cv) => cv.id === id) ?? null);
+  }
+
+  selectCv(cv: Cv): void {
+    this.selectItemSubject.next(cv);
   }
 }
