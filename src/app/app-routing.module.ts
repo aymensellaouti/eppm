@@ -7,6 +7,7 @@ import {FirstComponent} from "./components/first/first.component";
 import {DetailsCvComponent} from "./cv/details-cv/details-cv.component";
 import {SecondComponent} from "./components/second/second.component";
 import {NF404Component} from "./components/nf404/nf404.component";
+import {LoginComponent} from "./components/login/login.component";
 
 const routes: Routes = [
  // blabla/a
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'cv/:id', component: DetailsCvComponent},
   {path: 'todo', component: TodoComponent},
   {path: 'word', component: WordComponent},
+  {path: 'login', component: LoginComponent},
   {path: ':ahmed', component: SecondComponent},
   {path: '**', component: NF404Component},
 ];
