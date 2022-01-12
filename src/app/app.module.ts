@@ -27,6 +27,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToastrModule} from "ngx-toastr";
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
+import { EmbaucheComponent } from './cv/embauche/embauche.component';
+import { AddCvComponent } from './cv/add-cv/add-cv.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
     DefaultImagePipe,
     TodoComponent,
     NavbarComponent,
-    DetailsCvComponent
+    DetailsCvComponent,
+    EmbaucheComponent,
+    AddCvComponent
   ],
   imports: [
     BrowserModule,
