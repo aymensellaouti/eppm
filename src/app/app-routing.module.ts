@@ -6,6 +6,7 @@ import {WordComponent} from "./directives/word/word.component";
 import {FirstComponent} from "./components/first/first.component";
 import {DetailsCvComponent} from "./cv/details-cv/details-cv.component";
 import {SecondComponent} from "./components/second/second.component";
+import {NF404Component} from "./components/nf404/nf404.component";
 
 const routes: Routes = [
  // blabla/a
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'todo', component: TodoComponent},
   {path: 'word', component: WordComponent},
   {path: ':ahmed', component: SecondComponent},
+  {path: '**', component: NF404Component},
 ];
 
 @NgModule({
